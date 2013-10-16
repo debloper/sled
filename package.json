@@ -1,30 +1,33 @@
 {
-  "name": "OpenShift-Sample-App",
-  "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "name": "Sled",
+  "version": "0.9.0",
+  "description": "Authentication (gateway) as a Service",
   "keywords": [
-    "OpenShift",
-    "Node.js",
     "application",
-    "openshift"
+    "auth",
+    "authentication",
+    "gateway",
+    "identity",
+    "Node.js"
   ],
   "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url":  "http://www.openshift.com/"
+    "name": "Debloper",
+    "email": "debloper@gmail.com",
+    "url":  "http://debs.io/"
   },
-  "homepage": "http://www.openshift.com/",
+  "homepage": "http://sled.io/",
   "repository": {
     "type": "git",
-    "url": "https://gitub.com/openshift/origin-server"
+    "url": "https://gitub.com/debloper/sled"
   },
 
   "engines": {
-    "node": ">= 0.6.0",
+    "node": ">= 0.10.0",
     "npm": ">= 1.0.0"
   },
 
   "dependencies": {
+    "express": ">= 3.x"
   },
   "devDependencies": {},
   "bundleDependencies": [],
