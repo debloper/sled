@@ -3,7 +3,7 @@
 
 // Setup the environment variables
 var HOST = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1"
-,   PORT = process.env.OPENSHIFT_NODEJS_PORT || 8000
+  , PORT = process.env.OPENSHIFT_NODEJS_PORT || 8000
 ;
 
 // Request dependency modules
@@ -24,4 +24,4 @@ app.get('/', function(req, res) {
 });
 
 // Harness the horse
-app.listen(PORT);
+app.listen(PORT, HOST);
