@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Calvin";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/font/calvin.woff) format("woff");
+}
+
+/**
+ * Stylesheet Index:
+ * =================
+ *
+ * 0. Elements
+ * 1. ID & Class
+ * 2. Pseudoclass
+ * 3. Media Queries
+ **/
+
+/* 0. Elements */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+::selection {
+  color: #fff;
+  background: #333;
+}
+::-moz-selection {
+  color: #fff;
+  background: #333;
+}
+html { font-size: 16px; }
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: Calvin, Sans-serif;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+h1, h2, h3, h4 {
+  color: #fff;
+  text-shadow: 1px 1px 0 #111, 1px -1px 0 #111,
+               -1px 1px 0 #111, -1px -1px 0 #111;
+}
+section {
+  width: 800px;
+  margin: auto;
+}
+section h1 {
+  margin: 3rem auto 1rem;
+  font-size: 2.5rem;
+}
+section p { font-family: Schoolbell; }
+
+/* 1. ID & Class */
+#banner {
+  height: 300px;
+  border-bottom: 8px solid #111;
+  background: url(/img/banner.png) no-repeat 50% 0;
+}
+#emblem {
+  width: 25rem;
+  height: 6rem;
+  margin: auto;
+  top: -3.25rem;
+  position: relative;
+  border: solid #111;
+  border-radius: 50%;
+  border-width: 8px 16px;
+  background: url(/img/logo.png) no-repeat 50% 50% #fff;
+}
+
+/* 2. Pseudoclass */
+
+/* 3. Media Queries */
