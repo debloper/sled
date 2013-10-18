@@ -45,6 +45,13 @@ h1, h2, h3, h4 {
   text-shadow: 1px 1px 0 #111, 1px -1px 0 #111,
                -1px 1px 0 #111, -1px -1px 0 #111;
 }
+code, pre {
+  padding: 2px 4px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+pre { padding: 1rem; }
 section {
   width: 800px;
   margin: auto;
@@ -53,7 +60,11 @@ section h1 {
   margin: 3rem auto 1rem;
   font-size: 2.5rem;
 }
-section p { font-family: Schoolbell; }
+section p {
+  font-family: Schoolbell;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
 
 /* 1. ID & Class */
 #banner {

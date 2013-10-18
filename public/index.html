@@ -39,14 +39,48 @@
     <section>
         <h1 id="what">What is it?</h1>
         <p>
-            Sled.IO is a proof of concept.<br />
+            Sled.IO* is a proof of concept.<br />
             It's a prototype to demonstrate an idea in its simplest possible form.<br />
-            It's a mass-weapon-of-destruction in disguise that you can comically pull out of your pocket.
+            It's a projectile-rocket-launcher in disguise, that you can comically pull out of your pocket.
+        </p>
+        <p>
+            It releases developers from the pain of implementating various identity/authentication methods.<br />
+            It gives users the freedom of choice to choose their favorite auth-provider.<br />
+            Sled.IO* harnesses &amp; abstracts other auth-mechanisms.
+        </p>
+        <p>
+            It's a customizable, distributed, drop-in, authetication gateway.<br />
+            You may want to <a href="#">know more about the origin &amp; design</a> of the platform.<br />
+            * for the record, the platform that empowers Sled.IO was started with a codename: "Rhesus".
+        </p>
+        <h1 id="how">How to get started?</h1>
+        <p>
+        For a webapp, just have the following bit of code in your HTML &amp; you're almost set:
+<pre>
+&lt;div id="<b>tuna-fish-sandwich</b>"&gt;&lt;/div&gt;
+
+&lt;script src="<b>http://sled.io/rig.js</b>"&gt;&lt;/script&gt;
+</pre>
+        </p>
+        <p>
+            Now, if you check under the hood &mdash; the <code>rig.js</code> file has authentication server URL as the configuration parameters in it. If you're awesome, go ahead and save the JS locally and change the auth-server URL from <code>galaxoid.sled.io</code> to <code>nebular.sled.io</code> &mdash; et voila! You have a separate authentication server in use.
+        </p>
+        <p>
+            Rather want to use <code>http://127.0.0.1:8000</code> as the authentication server? Guess what, you can totally do that! It's pretty straight-forward, but a fistbump for good luck anyways...
         </p>
         <h1 id="why">Why does it matter?</h1>
-        <p></p>
-        <h1 id="how">How to get started?</h1>
-        <p></p>
+        <p>
+            With all those identity <b>solutions</b> out there, it's a no-brainer that <b>there has to be a problem</b>; and as new solutions keeps coming in as time passes by, that means <b>the problem still persists</b>; and by their innumerable counts, it's reasonable to infer <b>none of them solves the "problem" once and for all</b>.
+        </p>
+        <p>
+            This is where Sled.IO kicks in.</em>.
+        </p>
+        <p>
+            No, it doesn't challenge any particular authentication mechanism. Neither does it set out to <a href="http://xkcd.com/927" target="_blank">create a new best-of-all standard</a>. Rather, it wraps 'em all up, allowing the developers to give support for all federated logins in their apps, and leaving it up to the users to take their pick.
+        </p>
+        <p>
+            Sled.IO sets itself as the "<b>one <em>thing</em> to rule them all</b>".
+        </p>
     </section>
 
     <!-- Lazy Loadable JS -->
