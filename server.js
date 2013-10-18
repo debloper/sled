@@ -4,10 +4,13 @@
 // Setup the environment variables
 var HOST = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1"
   , PORT = process.env.OPENSHIFT_NODEJS_PORT || 8000
+  , PUB  = "public"
 ;
 
 // Request dependency modules
-var XPRS = require("express");
+var XPRS = require("express")
+  , FILE = require("fs")
+;
 
 // Initialize application
 var app = new XPRS();
@@ -15,12 +18,12 @@ var app = new XPRS();
 app.configure(function() {
     app.use(XPRS.logger());
     app.use(app.router);
-    app.use(XPRS.static(__dirname + '/public'));
+    app.use(XPRS.static(__dirname + "/" + PUB));
 });
 
 // Define routes
 app.get('/', function(req, res) {
-    res.end(Date(Date.now()), "utf-8");
+    res.end(FILE.readFileSync(PUB + "/index.html", "utf-8"));
 });
 
 // Harness the horse
