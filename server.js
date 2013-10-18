@@ -23,6 +23,7 @@ app.configure(function() {
 
 // Define routes
 app.get('/', function(req, res) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
     res.end(FILE.readFileSync(PUB + "/index.html", "utf-8"));
 });
 
